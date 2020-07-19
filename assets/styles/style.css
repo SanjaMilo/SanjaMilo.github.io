@@ -468,6 +468,15 @@ a.a-card:hover .c-txt {
     opacity: 1;
 }
 
+a.a-card:focus img.img-card {
+    opacity: 0.25;
+}
+
+a.a-card:focus span.material-icons,
+a.a-card:focus .c-txt {
+    opacity: 1;
+}
+
 .c-card span.material-icons {
     position: absolute;
     top: 50%;
