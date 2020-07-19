@@ -389,7 +389,7 @@ p.colored-name {
 .res-text-1 h3,
 .res-text-2 h3,
 .res-text-3 h3 {
-    display: inline-block;
+    display: block;
     border-bottom: 1px solid magenta;
 }
 
