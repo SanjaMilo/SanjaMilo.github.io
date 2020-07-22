@@ -73,14 +73,14 @@ nav.top-links {
     margin: 0.5rem 0rem;
 }
 
-.nav-links li > a {
+.nav-links li>a {
     font-size: 16px;
     padding: 0.7rem 1.5rem;
     border-radius: 50px 0 50px 0;
     box-shadow: 3px 3px 11px 0px rgba(128, 4, 190, 0.62);
 }
 
-.nav-links li > a:hover {
+.nav-links li>a:hover {
     cursor: pointer;
     color: magenta;
     box-shadow: 3px 3px 11px -3px rgba(249, 248, 250, 0.966);
@@ -105,10 +105,10 @@ button#close-menu-btn {
 }
 
 button#close-menu-btn:focus {
-    box-shadow: 3px 3px 11px -3px rgba(249, 248, 250, 0.966); 
+    box-shadow: 3px 3px 11px -3px rgba(249, 248, 250, 0.966);
 }
 
-button#close-menu-btn > i {
+button#close-menu-btn>i {
     color: magenta;
     font-size: 2rem;
     text-shadow: 1px 1px 1px #35013a;
@@ -177,7 +177,7 @@ span.sm-name {
     text-align: center;
 }
 
-.nav-icons li > a {
+.nav-icons li>a {
     margin: 0rem 1.5rem;
     font-size: 2rem;
 }
@@ -393,7 +393,7 @@ p.colored-name {
     border-bottom: 1px solid magenta;
 }
 
- h5.skills {
+h5.skills {
     display: inline-block;
     margin: 0.3rem 0.5rem;
 }
@@ -511,7 +511,7 @@ div.modal-dialog-works {
 .modal-body {
     background-color: #f1f1f1;
     padding: 0px;
-    
+
 }
 
 h5.modal-hdr {
@@ -525,8 +525,8 @@ p.modal-txt {
 }
 
 .modal-body img {
- max-width: 100%;
- height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .modal-footer {
@@ -540,13 +540,13 @@ p.modal-txt {
 }
 
 .btn-modal:hover {
- color: magenta;
- border-bottom: 1px solid magenta;
+    color: magenta;
+    border-bottom: 1px solid magenta;
 }
 
 .btn-modal:focus {
     box-shadow: none;
-   border-bottom: 1px solid magenta;
+    border-bottom: 1px solid magenta;
 }
 
 /* SECTION RANDOM  */
@@ -737,7 +737,7 @@ span.scroll-top:hover {
     /* HOME section */
 
     h1 {
-        font-size: 3rem; 
+        font-size: 3rem;
     }
 
     /* Resume section */
@@ -792,7 +792,7 @@ span.scroll-top:hover {
     /* HOME section */
 
     h1 {
-        font-size: 2.8rem; 
+        font-size: 2.8rem;
     }
 
     span.sm-name {
@@ -846,7 +846,7 @@ span.scroll-top:hover {
 
     /* Works section */
 
-    
+
 
     /* Random section  */
 
@@ -861,9 +861,9 @@ span.scroll-top:hover {
 
 @media only screen and (max-width: 800px) {
 
-     /* HOME section */
+    /* HOME section */
 
-     .nav-links li>a {
+    .nav-links li>a {
         font-size: 12px;
     }
 }
@@ -891,13 +891,13 @@ span.scroll-top:hover {
         padding: 1rem 2rem;
     }
 
-    .top-scroll-links > li {
+    .top-scroll-links>li {
         display: block;
         margin: 1rem 0rem;
     }
 
     h1 {
-     top: 35%;
+        top: 35%;
     }
 
     div.blur {
@@ -926,9 +926,9 @@ span.scroll-top:hover {
     .res-text-1,
     .res-text-2,
     .res-text-3 {
-       text-align: center;
-       padding-top: 2rem;
-       padding-bottom: 2rem;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     .res {
@@ -986,7 +986,7 @@ span.scroll-top:hover {
 
 @media only screen and (max-width: 575px) {
     /* Home section  */
-    
+
     h1 {
         font-size: 2.2rem;
     }
@@ -1001,7 +1001,10 @@ span.scroll-top:hover {
         display: none;
     }
 
-    h2.h2-about, h2.contact-heading, .res-info h3, #works h2 {
+    h2.h2-about,
+    h2.contact-heading,
+    .res-info h3,
+    #works h2 {
         font-size: 1.5rem;
     }
 
@@ -1061,16 +1064,20 @@ span.scroll-top:hover {
     }
 
     span.scroll-top {
-    font-size: 2.5rem;
-    padding: 0.5rem;
+        font-size: 2.5rem;
+        padding: 0.5rem;
     }
 
 }
 
 @media only screen and (max-width: 525px) {
- h1 {
-     top: 18%;
- }
+    h1 {
+        top: 18%;
+    }
+
+    button#close-menu-btn>i {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -1083,7 +1090,7 @@ span.scroll-top:hover {
         font-size: 20px;
     }
 
-    .nav-icons li>a  {
+    .nav-icons li>a {
         font-size: 1rem;
         margin: 0rem 0.3rem;
     }
@@ -1098,10 +1105,7 @@ span.scroll-top:hover {
     .carousel-caption h5 {
         font-size: 1rem;
     }
-
-
 }
-
 
 
 @media only screen and (max-width: 305px) {
@@ -1109,7 +1113,10 @@ span.scroll-top:hover {
         font-size: 1.5rem;
     }
 
-    h2.h2-about, h2.contact-heading, .res-info h3, #works h2 {
+    h2.h2-about,
+    h2.contact-heading,
+    .res-info h3,
+    #works h2 {
         font-size: 1.3rem;
     }
 
@@ -1166,12 +1173,12 @@ span.scroll-top:hover {
 
     .res-info h3 {
         font-size: 1.5rem;
-    } 
+    }
 
 }
 
 @media only screen and (max-width: 260px) {
     h1 {
-       display: none;
+        display: none;
     }
 }
