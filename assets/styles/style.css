@@ -891,9 +891,13 @@ span.scroll-top:hover {
         padding: 1rem 2rem;
     }
 
-    .top-scroll-links>li {
+    .top-scroll-links > li {
         display: block;
         margin: 1rem 0rem;
+    }
+
+    .centered {
+        min-height: 739px;
     }
 
     h1 {
