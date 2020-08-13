@@ -537,6 +537,7 @@ p.modal-txt {
 .btn-modal {
     color: magenta;
     letter-spacing: 3px;
+    border-radius: 0px;
 }
 
 .btn-modal:hover {
