@@ -20,7 +20,8 @@ $(function() {
 	let isClicked = false;
 	let menuLinks = $('.nav-links');
 
-	function closeOpenMenu() {
+	function closeOpenMenu(e) {
+		e.stopPropagation(); // stop bubbling up to parent elements (document)
 		isClicked = !isClicked;
 		console.log(isClicked);
 		if (isClicked === false) {
@@ -29,8 +30,15 @@ $(function() {
 			menuLinks.css('display', 'block');
 		}
 	}
-
+	
 	closeBtn.on('click', closeOpenMenu);
+	// Close the menu links on outside click (document):
+	$(document).on('click', function() {
+		if (isClicked === true) {
+			menuLinks.css('display', 'none');
+			isClicked = !isClicked;
+		}
+	});
 
 	//scrollSpy function
 
