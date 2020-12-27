@@ -1,6 +1,4 @@
-
 $(function() {
-
 	// Footer button to scroll to the top of the page
 
 	let scrollBtn = $('.scroll-top');
@@ -23,17 +21,16 @@ $(function() {
 	let menuLinks = $('.nav-links');
 
 	function closeOpenMenu() {
-		isClicked = ! isClicked;
+		isClicked = !isClicked;
 		console.log(isClicked);
 		if (isClicked === false) {
 			menuLinks.css('display', 'none');
 		} else {
 			menuLinks.css('display', 'block');
 		}
-	};
+	}
 
 	closeBtn.on('click', closeOpenMenu);
-
 
 	//scrollSpy function
 
@@ -69,6 +66,36 @@ $(function() {
 	$(window).scroll(function() {
 		scrollSpy();
 	});
-
 	
+
+	// Animation on the title letters in the Resume section (listen on mouse leave)
+	function animationText(target) {
+		$(target).each(function(index) {
+			var characters = $(target).text().split('');
+			console.log(characters); // test
+			$(target).empty();
+			$.each(characters, function(i, el) {
+				$(target).append(`<span class="letters">${el}</span>`);
+			});
+		});
+		// ANIMATION (loop false means not to repeat animation, just one time animation (true, means infinite loop)
+		anime.timeline({ loop: false }).add({
+			targets: `${target} .letters`, // css selector
+			scale: [ 3, 1 ], // 3 to 1
+			opacity: [ 0, 1 ], // 0 to 1 to show it
+			duration: 900, // 900 milliseconds
+			easing: 'easeInOutExpo', // easing style
+			delay: anime.stagger(100) // 0.1 second delay of every character
+		});
+	};
+	// Event listeners on the three different titles 
+	$('#title1').mouseout(function(){
+		animationText('#title1');
+	});
+	$('#title2').mouseout(function(){
+		animationText('#title2');
+	});
+	$('#title3').mouseout(function(){
+		animationText('#title3');
+	});
 });
