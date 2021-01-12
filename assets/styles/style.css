@@ -75,19 +75,20 @@ nav.top-links {
 .nav-links li>a {
     font-size: 16px;
     padding: 0.7rem 1.5rem;
-    border-radius: 50px 0 50px 0;
-    box-shadow: 3px 3px 11px 0px rgba(128, 4, 190, 0.62);
+    /* border-radius: 50px 0 50px 0; */
+    /* box-shadow: 3px 3px 11px 0px rgba(128, 4, 190, 0.62); */
 }
 
 .nav-links li>a:hover {
     cursor: pointer;
     color: magenta;
-    box-shadow: 3px 3px 11px -3px rgba(249, 248, 250, 0.966);
+    /* box-shadow: 3px 3px 11px -3px rgba(249, 248, 250, 0.966); */
 }
 
 .active {
     color: magenta !important;
-    box-shadow: 3px 3px 11px -3px rgba(249, 248, 250, 0.966) !important;
+    border-bottom: 1px solid magenta;
+    /* box-shadow: 3px 3px 11px -3px rgba(249, 248, 250, 0.966) !important; */
 }
 
 /* Menu button for the sub-menu */
@@ -138,7 +139,7 @@ h1 {
     text-shadow: 1px 1px 1px #35013a;
     margin-left: 1rem;
     margin-right: 1rem;
-    animation: fade_in_anime 3s 1.5s forwards;
+    animation: fade_in_anime 2s 1.5s forwards;
     opacity: 0;
 }
 
@@ -164,7 +165,18 @@ div.blur {
     padding: 1rem 5rem 1rem 5rem;
     z-index: 20;
     background: rgba(20, 1, 44, 0.3);
+    animation: blur-text 2s 1s forwards;
+    transform: translateY(220px);
     /* backdrop-filter: blur(5px); */
+}
+
+@keyframes blur-text {
+    0% {
+        transform: translateY(220px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 p.intro {
