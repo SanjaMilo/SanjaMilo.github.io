@@ -205,7 +205,7 @@ span.sm-name {
 
 .nav-icons li>a {
     margin: 0rem 1.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .fab {
@@ -588,56 +588,6 @@ p.modal-txt {
     transition: linear 0.3s;
 }
 
-/* SECTION RANDOM  */
-
-#interests {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-div.darken-caro {
-    background-color: black;
-    height: 90vh;
-}
-
-img.darken-img {
-    opacity: 0.4;
-}
-
-span.caro-caret {
-    color: magenta;
-    font-size: 3rem;
-}
-
-.carousel-indicators {
-    bottom: 20px;
-}
-
-.carousel-indicators li {
-    background-color: magenta;
-}
-
-.carousel-caption {
-    bottom: 100px;
-}
-
-.carousel-caption h5 {
-    text-align: justify;
-    font-family: 'Nothing You Could Do', cursive;
-    font-size: 2.5rem;
-    font-weight: 900;
-    color: white;
-    text-shadow: 1px 1px 1px #35013a;
-}
-
-.carousel-caption p {
-    font-size: 1.25rem;
-    text-align: justify;
-    font-style: italic;
-    color: white;
-    text-shadow: 1px 1px 1px #35013a;
-}
-
 /* SECTION CONTACT  */
 
 #contact {
@@ -801,8 +751,6 @@ span.scroll-top:hover {
         letter-spacing: 3px;
     }
 
-    /* Resume section */
-
     .res-text-1 h3,
     .res-text-2 h3,
     .res-text-3 h3 {
@@ -883,19 +831,6 @@ span.scroll-top:hover {
         font-size: 1.5rem;
     }
 
-    /* Works section */
-
-
-
-    /* Random section  */
-
-    .carousel-caption h5 {
-        font-size: 2.2rem;
-    }
-
-    .carousel-caption p {
-        font-size: 16px;
-    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1000,19 +935,6 @@ span.scroll-top:hover {
         height: auto;
     }
 
-    /* Random section */
-
-    div.darken-caro {
-        height: 100%;
-    }
-
-    .carousel-caption {
-        bottom: 100px;
-    }
-
-    .carousel-indicators {
-        bottom: 20px;
-    }
 }
 
 @media only screen and (max-width: 660px) {
@@ -1021,7 +943,6 @@ span.scroll-top:hover {
 
     h1 {
         top: 30%;
-        /* font-size: 2.5rem; */
     }
 }
 
@@ -1075,27 +996,6 @@ span.scroll-top:hover {
         margin: 0;
     }
 
-    /* Random section  */
-
-    .carousel-caption h5 {
-        font-size: 1.2rem;
-    }
-
-    .carousel-caption {
-        bottom: 50px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-
-    .carousel-indicators {
-        bottom: 0px;
-    }
-
-    span.caro-caret {
-        color: magenta;
-        font-size: 2rem;
-    }
-
     /* Footer section */
 
     footer {
@@ -1121,6 +1021,10 @@ span.scroll-top:hover {
     button#close-menu-btn>i {
         font-size: 1.5rem;
     }
+
+    p.p-top-txt, .contact-details p {
+        margin: 0.5rem;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -1143,17 +1047,21 @@ span.scroll-top:hover {
         margin-bottom: 5px;
     }
 
-    /* Random section  */
-
-    .carousel-caption h5 {
-        font-size: 1rem;
-    }
 }
 
 
 @media only screen and (max-width: 305px) {
+    body {
+        font-size: 14px;
+    }
+    
     h1 {
         font-size: 1.5rem;
+    }
+
+    #contact {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     h2.h2-about,
@@ -1197,19 +1105,6 @@ span.scroll-top:hover {
     .rad {
         padding: 10px 15px;
         font-size: 12px;
-    }
-
-    /* Random section  */
-
-    .carousel-caption h5 {
-        font-size: 0.9rem;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 300;
-    }
-
-    .carousel-caption p {
-        font-size: 12px;
-        margin-bottom: 0px;
     }
 
     /* Resume section  */

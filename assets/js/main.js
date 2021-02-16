@@ -10,7 +10,7 @@ $(function() {
 			},
 			3000
 		);
-	}
+	};
 
 	scrollBtn.click(scrollToTop);
 
@@ -28,8 +28,8 @@ $(function() {
 			menuLinks.css('display', 'none');
 		} else {
 			menuLinks.css('display', 'block');
-		}
-	}
+		};
+	};
 	
 	closeBtn.on('click', closeOpenMenu);
 	// Close the menu links on outside click (document):
@@ -37,7 +37,7 @@ $(function() {
 		if (isClicked === true) {
 			menuLinks.css('display', 'none');
 			isClicked = !isClicked;
-		}
+		};
 	});
 
 	//scrollSpy function
@@ -49,12 +49,12 @@ $(function() {
 		for (let i = 0; i < sections.length; i++) {
 			if ($('#' + sections[i]).offset().top <= $(window).scrollTop() + 79) {
 				current = sections[i];
-			}
-		}
+			};
+		};
 
 		$(".top-scroll-links a[href='#" + current + "']").addClass('active');
 		$('.top-scroll-links a').not("a[href='#" + current + "']").removeClass('active');
-	}
+	};
 
 	// smooth scrolling navigation
 
