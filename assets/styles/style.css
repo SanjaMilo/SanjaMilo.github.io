@@ -464,7 +464,7 @@ h5.skills {
     letter-spacing: 10px;
     margin-top: 6rem;
     margin-bottom: 6rem;
-    transition: ease-out 0.5s;
+    transition: ease-out 0.7s;
     position: relative;
 }
 
@@ -477,12 +477,12 @@ h5.skills {
     height: 1px;
     background-color: magenta;
     transform: scale(0);
-    transform-origin: right center;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    /* transform-origin: right center; */
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 #works h2:hover::before {
     transform: scale(1); 
-    transform-origin: left center; 
+    /* transform-origin: left center;  */
 }
 
 #works h2:hover {
@@ -908,6 +908,10 @@ span.scroll-top:hover {
 
     /* About section  */
 
+    h2.h2-about {
+        font-size: 1.5rem;
+    }
+
     .resume button {
         margin: 1rem 2rem;
     }
@@ -984,8 +988,15 @@ span.scroll-top:hover {
     .res-info h3,
     #works h2 {
         font-size: 1.2rem;
+    }
+
+    .res-info h3 {
+        letter-spacing: 3px;
+    }
+
+    #works h2 {
         margin-top: 4rem;
-        margin-bottom: 4rem;
+        margin-bottom: 4rem; 
     }
 
     .about-info h4 {
