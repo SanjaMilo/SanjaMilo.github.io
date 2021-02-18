@@ -133,7 +133,9 @@ h1 {
     color: white;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 4rem;
+    font-size: 2.5rem;
+    letter-spacing: 15px;
+    text-transform: uppercase;
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-shadow: 1px 1px 1px #35013a;
@@ -151,7 +153,7 @@ h1 {
     }
     100% {
         opacity: 1;
-        letter-spacing: 5px;
+        letter-spacing: 15px;
         color: white;
     }
 }
@@ -303,9 +305,9 @@ br.email-break-2 {
 }
 
 h2.h2-about {
-    font-size: 2.5rem;
-    letter-spacing: 3px;
-    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
     color: white;
     margin: 1rem 2rem;
 }
@@ -445,7 +447,7 @@ h5.skills {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 2.5rem;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
 }
 
 /* SECTION WORKS  */
@@ -457,18 +459,34 @@ h5.skills {
 #works h2 {
     display: inline-block;
     color: magenta;
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: 3px;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
     transition: ease-out 0.5s;
+    position: relative;
+}
+
+#works h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: magenta;
+    transform: scale(0);
+    transform-origin: right center;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#works h2:hover::before {
+    transform: scale(1); 
+    transform-origin: left center; 
 }
 
 #works h2:hover {
-    letter-spacing: 5px;
+    color: #ffffff;
 }
 
 span.letters {
@@ -726,7 +744,7 @@ span.scroll-top:hover {
     /* HOME section */
 
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     /* Resume section */
@@ -779,7 +797,7 @@ span.scroll-top:hover {
     /* HOME section */
 
     h1 {
-        font-size: 2.8rem;
+        font-size: 1.8rem;
     }
 
     span.sm-name {
@@ -829,6 +847,12 @@ span.scroll-top:hover {
 
     .res-info h3 {
         font-size: 1.5rem;
+    }
+
+    /* Works section */ 
+
+    #works h2 {
+        font-size: 1.7rem;
     }
 
 }
@@ -935,25 +959,15 @@ span.scroll-top:hover {
         height: auto;
     }
 
-}
-
-@media only screen and (max-width: 660px) {
-
-    /* Home section  */
-
-    h1 {
-        top: 30%;
+    #works h2 {
+        font-size: 1.5rem;
+        letter-spacing: 7px;
     }
+
 }
-
-
 
 @media only screen and (max-width: 575px) {
     /* Home section  */
-
-    h1 {
-        font-size: 2.2rem;
-    }
 
     span.sm-name {
         font-size: 18px;
@@ -969,7 +983,9 @@ span.scroll-top:hover {
     h2.contact-heading,
     .res-info h3,
     #works h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
 
     .about-info h4 {
@@ -1014,12 +1030,13 @@ span.scroll-top:hover {
 }
 
 @media only screen and (max-width: 525px) {
-    h1 {
-        top: 18%;
-    }
 
     button#close-menu-btn>i {
         font-size: 1.5rem;
+    }
+
+    h2.h2-about, .resume button {
+        margin: 1rem 0.5rem;
     }
 
     p.p-top-txt, .contact-details p {
@@ -1029,8 +1046,7 @@ span.scroll-top:hover {
 
 @media only screen and (max-width: 400px) {
     h1 {
-        top: 15%;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     i.fab {
@@ -1056,7 +1072,8 @@ span.scroll-top:hover {
     }
     
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        top: 20%;
     }
 
     #contact {
@@ -1068,7 +1085,7 @@ span.scroll-top:hover {
     h2.contact-heading,
     .res-info h3,
     #works h2 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .contact-intro p {
