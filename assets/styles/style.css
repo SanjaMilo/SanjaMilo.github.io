@@ -33,6 +33,10 @@ a:hover {
 
 /* HOME Section */
 
+#home {
+    background-color: #000000;
+}
+
 /* Navbar menu  */
 
 header {
@@ -123,6 +127,17 @@ button#close-menu-btn>i {
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
+    animation: bg-hero 1s 1s forwards ease;
+    opacity: 0;
+}
+
+@keyframes bg-hero {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 h1 {
@@ -141,7 +156,7 @@ h1 {
     text-shadow: 1px 1px 1px #35013a;
     margin-left: 1rem;
     margin-right: 1rem;
-    animation: fade_in_anime 2s 1.5s forwards;
+    animation: fade_in_anime 2s 2s forwards;
     opacity: 0;
 }
 

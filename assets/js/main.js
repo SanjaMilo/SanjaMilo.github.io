@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
 	// Footer button to scroll to the top of the page
 
 	let scrollBtn = $('.scroll-top');
