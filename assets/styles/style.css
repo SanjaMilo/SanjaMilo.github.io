@@ -223,34 +223,53 @@ span.sm-name {
 .nav-icons li>a {
     margin: 0rem 1.5rem;
     font-size: 1.5rem;
+    position: relative;
 }
 
 .fab {
     padding: 0.5rem 0.5rem;
 }
 
-.nav-icons i.fa-facebook-f {
+.nav-icons i.fa-facebook-f, span.facebook {
     color: #4267B2;
 }
 
-.nav-icons i.fa-instagram {
+.nav-icons i.fa-instagram, span.instagram {
     color: rgb(255, 0, 140);
 }
 
-.nav-icons i.fa-linkedin-in {
+.nav-icons i.fa-linkedin-in, span.linkedin {
     color: #0187c2;
 }
 
-.nav-icons i.fa-github {
+.nav-icons i.fa-github, span.github {
     color: rgb(158, 6, 196);
 }
 
-.nav-icons i.fa-gitlab {
+.nav-icons i.fa-gitlab, span.gitlab {
     color: #FCA326;
 }
 
-.nav-icons i:hover {
+.nav-icons li>a:hover i.fab,
+.nav-icons li>a:hover span{
     color: white;
+}
+
+.nav-icons li>a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: magenta;
+    transform: scale(0);
+    transform-origin: right center;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-icons li>a:hover::before {
+    transform: scale(1); 
+    transform-origin: left center; 
 }
 
 .centered span.material-icons {
@@ -528,7 +547,8 @@ a.a-card {
 }
 
 a.a-card:hover img.img-card {
-    opacity: 0.25;
+    opacity: 0.35;
+    transform: scale(0.95);
 }
 
 a.a-card:hover span.material-icons,
@@ -538,7 +558,8 @@ a.a-card:hover .c-txt {
 }
 
 a.a-card:focus img.img-card {
-    opacity: 0.25;
+    opacity: 0.35;
+    transform: scale(0.95);
 }
 
 a.a-card:focus span.material-icons,
@@ -752,7 +773,25 @@ span.scroll-top:hover {
     color: black;
 }
 
-/* RESPONSIVENESS For Tablet and Mobile devices */
+/* RESPONSIVENESS For Large screens, Tablet and Mobile devices */
+
+@media only screen and (min-width: 1600px) {
+    .c-card img.img-card {
+        height: 380px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .c-card img.img-card {
+        height: 480px;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .c-card img.img-card {
+        height: 580px;
+    }
+}
 
 @media only screen and (max-width: 1200px) {
 
