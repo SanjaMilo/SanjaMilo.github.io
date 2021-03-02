@@ -1,6 +1,6 @@
-$(document).ready(function() {
-	// Footer button to scroll to the top of the page
+$(window).on('load', function() {
 
+	// Footer button to scroll to the top of the page
 	let scrollBtn = $('.scroll-top');
 
 	function scrollToTop() {
@@ -60,12 +60,22 @@ $(document).ready(function() {
 
 	$('.top-scroll-links a').click(function() {
 		let target = $(this).attr('href');
-		$('body, html').animate(
-			{
-				scrollTop: $(target).offset().top - 74
-			},
-			1000
-		);
+
+		if ($(window).width() > 768) {
+			$('body, html').animate(
+				{
+					scrollTop: $(target).offset().top - 74
+				},
+				1000
+			);
+		} else {
+			$('body, html').animate(
+				{
+					scrollTop: $(target).offset().top
+				},
+				1000
+			);
+		};
 		return false;
 	});
 

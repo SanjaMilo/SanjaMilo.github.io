@@ -6,6 +6,14 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/* This code sets the play state of everything on the page to “paused”, whenever the body has the class js-loading.
+It will make sure it applies to all of the :before and :after pseudo-elements also. */
+.loading *,
+.loading *:before,
+.loading *:after {
+  animation-play-state: paused !important;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -79,20 +87,16 @@ nav.top-links {
 .nav-links li>a {
     font-size: 16px;
     padding: 0.7rem 1.5rem;
-    /* border-radius: 50px 0 50px 0; */
-    /* box-shadow: 3px 3px 11px 0px rgba(128, 4, 190, 0.62); */
 }
 
 .nav-links li>a:hover {
     cursor: pointer;
     color: magenta;
-    /* box-shadow: 3px 3px 11px -3px rgba(249, 248, 250, 0.966); */
 }
 
 .active {
     color: magenta !important;
     border-bottom: 1px solid magenta;
-    /* box-shadow: 3px 3px 11px -3px rgba(249, 248, 250, 0.966) !important; */
 }
 
 /* Menu button for the sub-menu */
@@ -127,7 +131,7 @@ button#close-menu-btn>i {
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
-    animation: bg-hero 1s 1s forwards ease;
+    animation: bg-hero 1s forwards ease;
     opacity: 0;
 }
 
@@ -549,6 +553,7 @@ a.a-card {
 a.a-card:hover img.img-card {
     opacity: 0.35;
     transform: scale(0.95);
+    border: 1px solid magenta !important;
 }
 
 a.a-card:hover span.material-icons,
@@ -560,6 +565,7 @@ a.a-card:hover .c-txt {
 a.a-card:focus img.img-card {
     opacity: 0.35;
     transform: scale(0.95);
+    border: 1px solid magenta !important;
 }
 
 a.a-card:focus span.material-icons,
@@ -580,7 +586,7 @@ a.a-card:focus .c-txt {
 .c-txt {
     position: absolute;
     top: 15px;
-    left: 15px;
+    left: 25px;
     color: white;
     text-shadow: 1px 1px 1px #35013a;
     opacity: 0;
@@ -750,7 +756,7 @@ footer {
 .copy-rights p {
     color: white;
     margin: 0;
-    padding-bottom: 1.5rem;
+    padding: 1rem 0;
     white-space: normal;
 }
 
@@ -1126,6 +1132,10 @@ span.scroll-top:hover {
     .blur hr {
         margin-top: 5px;
         margin-bottom: 5px;
+    }
+
+    .copy-rights p {
+        font-size: 12px;
     }
 
 }

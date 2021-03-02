@@ -9,19 +9,31 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Fontawesome -->
     <link href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css" rel="stylesheet">
+    <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Permanent+Marker&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Preload background image -->
+    <link rel="preload" href="assets/images/unsplashA.jpg" as="image">
+    <!-- Style sheets -->
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/stylevideo.css">
 </head>
 
 <body>
-
+    <script>
+        document.body.classList.add('loading');
+        window.addEventListener("load", showPage);
+        function showPage() {
+            document.body.classList.remove('loading');
+        };
+    </script>
+    
     <section id="home">
         <header>
             <nav class="top-links">
@@ -84,7 +96,7 @@
                 <div class="row about-info">
                     <div class="contact-details col-lg-6 col-md-6 col-sm-12 com-xs-12">
                         <p class="colored-name">SANJA MILORADOVIC</p>
-                        <p>Front-End Developer</p>
+                        <p>Front-End Web Developer</p>
                         <br>
                         <!-- <p>sanjamiloradovic@<br class="email-break-2">yahoo.com</p> -->
                     </div>
@@ -188,7 +200,7 @@
             </div>
             <div class="c-card col-lg-4 col-md-6">
                 <a class="a-card" href="#" data-toggle="modal" data-target="#modal2">
-                    <img class="img-card img-fluid" src="assets/images/table.jpg" alt="">
+                    <img class="img-card img-fluid" src="assets/images/xps-yNvVnPcurD8-unsplash.jpg" alt="">
                     <div class="c-txt">
                         <h5>Brainster Space</h5>
                         <p>Second project</p>
@@ -198,7 +210,7 @@
             </div>
             <div class="c-card col-lg-4 col-md-6">
                 <a class="a-card" href="#" data-toggle="modal" data-target="#modal3">
-                    <img class="img-card img-fluid" src="assets/images/5.jpg" alt="">
+                    <img class="img-card img-fluid" src="assets/images/joshua-woroniecki-lzh3hPtJz9c-unsplash.jpg" alt="">
                     <div class="c-txt">
                         <h5>Countries</h5>
                         <p>Search world countries (React)</p>
@@ -218,7 +230,7 @@
             </div>
             <div class="c-card col-lg-4 col-md-6">
                 <a class="a-card" href="#" data-toggle="modal" data-target="#modal5">
-                    <img class="img-card img-fluid" src="assets/images/philipp.jpg" alt="">
+                    <img class="img-card img-fluid" src="assets/images/mohamed-m-6MXDP9u6fmU-unsplash.jpg" alt="">
                     <div class="c-txt">
                         <h5>Case Studies X</h5>
                         <p>Third project (React)</p>
