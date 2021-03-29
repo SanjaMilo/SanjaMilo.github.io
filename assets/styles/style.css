@@ -405,6 +405,7 @@ p.colored-name {
 .radiant-1:hover {
     background-position: 100% 50%;
     color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .radiant-1:focus {
@@ -651,8 +652,8 @@ p.modal-txt {
 /* SECTION CONTACT  */
 
 #contact {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 5%;
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../images/ribbon.jpg');
     background-size: cover;
@@ -887,6 +888,13 @@ span.scroll-top:hover {
 
     .about-info h4 {
         margin: 1rem 2rem;
+    }
+
+    /* Contact section */
+
+    #contact {
+        padding-left: 5%;
+        padding-right: 5%; 
     }
 
     /* Resume section */
