@@ -117,3 +117,4 @@ $(window).on('load', function() {
 		animationText('#title3');
 	});
 });
+
