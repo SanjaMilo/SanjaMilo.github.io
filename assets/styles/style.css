@@ -234,29 +234,20 @@ span.sm-name {
     padding: 0.5rem 0.5rem;
 }
 
-.nav-icons i.fa-facebook-f, span.facebook {
-    color: #4267B2;
+.fab {
+    color: magenta;
 }
 
-.nav-icons i.fa-instagram, span.instagram {
-    color: rgb(255, 0, 140);
+.nav-icons span {
+    color: #ffffff;
 }
 
-.nav-icons i.fa-linkedin-in, span.linkedin {
-    color: #0187c2;
-}
-
-.nav-icons i.fa-github, span.github {
-    color: rgb(158, 6, 196);
-}
-
-.nav-icons i.fa-gitlab, span.gitlab {
-    color: #FCA326;
-}
-
-.nav-icons li>a:hover i.fab,
-.nav-icons li>a:hover span{
+.nav-icons li>a:hover i.fab{
     color: white;
+}
+
+.nav-icons li>a:hover span {
+    color: magenta;
 }
 
 .nav-icons li>a::before {
@@ -293,7 +284,7 @@ span.sm-name {
 /* ABOUT Section  */
 
 #about {
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.99), rgba(247, 101, 239, 0.897));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
 }
 
 .about-img {
@@ -304,17 +295,15 @@ span.sm-name {
 
 .about-img img {
     width: 100%;
-    opacity: 0.7;
+    /* opacity: 0.7; */
 }
 
 .image-txt {
     font-style: italic;
     letter-spacing: 2px;
-    color: white;
-    position: absolute;
-    bottom: 20%;
-    left: 5%;
-    right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 16px;
 }
 
 .image-txt div {
@@ -322,8 +311,9 @@ span.sm-name {
     align-items: center;
     height: 60px;
     margin-top: 16px;
-    box-shadow: inset 0px -8px 44px -3px rgba(199, 1, 189, 0.7);
+    color: #ffffff;
     text-shadow: 1px 1px 1px #35013a;
+    border: 1px solid magenta;
 }
 
 br.email-break,
@@ -343,10 +333,10 @@ br.email-break-2 {
 }
 
 h2.h2-about {
-    font-size: 2rem;
+    font-size: 2.5rem;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: white;
+    color: magenta;
     margin: 1rem 2rem;
 }
 
@@ -383,7 +373,85 @@ p.colored-name {
     align-items: center;
 }
 
-.rad {
+.btn-cv {
+    position: relative;
+    display: inline-block;
+    color: #ffffff;;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 200;
+    margin: 2rem;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    white-space: normal;
+}
+
+.btn-cv:hover {
+    color: magenta;
+}
+
+.btn-cv>span {
+    position: relative;
+    display: inline-block;
+    padding: 1.2rem 2.2rem;
+}
+
+.btn-cv::before,
+.btn-cv::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background-color: magenta;
+    transition: all 0.3s ease;
+}
+
+.btn-cv>span::before,
+.btn-cv>span::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: magenta;
+    transition: all 0.3s ease;
+}
+
+.btn-cv::before {
+    height: 50%;
+    width: 1px;
+}
+
+.btn-cv::after {
+    width: 20%;
+    height: 1px;
+}
+
+.btn-cv:hover::before,
+.btn-cv>span:hover::before {
+    height: 100%;
+}
+
+.btn-cv:hover::after,
+.btn-cv>span:hover::after {
+    width: 100%;
+}
+
+.btn-cv>span::before {
+    width: 1px;
+    height: 50%;
+}
+
+.btn-cv>span::after {
+    width: 20%;
+    height: 1px;
+}
+
+
+/* .rad {
     color: white;
     width: 320px;
     border-radius: 5px;
@@ -395,11 +463,10 @@ p.colored-name {
     background-size: 400% 400%;
     border: 0;
     white-space: normal;
-    /* background-position: 0 0; */
 }
 
 .radiant-1 {
-    background-image: linear-gradient(to right, #fc00ff 0%, #00dbde 51%, #fc00ff 100%);
+    background-image: linear-gradient(to right, #fc00ff 0%, #815ca0 51%, #fc00ff 100%);
 }
 
 .radiant-1:hover {
@@ -410,7 +477,7 @@ p.colored-name {
 
 .radiant-1:focus {
     outline: 0px;
-}
+} */
 
 /* Modal  */
 
@@ -816,7 +883,7 @@ span.scroll-top:hover {
     }
 
     .image-txt div {
-        box-shadow: inset 0px -8px 44px -3px rgba(77, 1, 73, 0.7);
+        /* box-shadow: inset 0px -8px 44px -3px rgba(77, 1, 73, 0.7); */
         font-size: 12px;
     }
 
