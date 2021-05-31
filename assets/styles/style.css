@@ -312,8 +312,9 @@ span.sm-name {
     height: 60px;
     margin-top: 16px;
     color: #ffffff;
-    text-shadow: 1px 1px 1px #35013a;
+    /* text-shadow: 1px 1px 1px #35013a; */
     border: 1px solid magenta;
+    font-size: 12px;
 }
 
 br.email-break,
@@ -329,7 +330,7 @@ br.email-break-2 {
 .about-txt {
     margin-top: 5%;
     margin-bottom: 5%;
-    border-left: 1px solid magenta;
+    /* border-left: 1px solid magenta; */
 }
 
 h2.h2-about {
@@ -363,13 +364,15 @@ p.p-top-txt {
 
 p.colored-name {
     color: magenta;
-    text-shadow: 1px 1px 1px #35013a;
+    /* text-shadow: 1px 1px 1px #35013a; */
 }
 
 /* Download Button za .pdf Resume (in Modal) */
 
 .resume {
     display: flex;
+    justify-content: center;
+    align-items: center;
     align-items: center;
 }
 
@@ -449,35 +452,6 @@ p.colored-name {
     width: 20%;
     height: 1px;
 }
-
-
-/* .rad {
-    color: white;
-    width: 320px;
-    border-radius: 5px;
-    height: 70px;
-    line-height: 70px;
-    margin: 0.5rem;
-    letter-spacing: 5px;
-    transition: all ease 1s;
-    background-size: 400% 400%;
-    border: 0;
-    white-space: normal;
-}
-
-.radiant-1 {
-    background-image: linear-gradient(to right, #fc00ff 0%, #815ca0 51%, #fc00ff 100%);
-}
-
-.radiant-1:hover {
-    background-position: 100% 50%;
-    color: black;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.radiant-1:focus {
-    outline: 0px;
-} */
 
 /* Modal  */
 
