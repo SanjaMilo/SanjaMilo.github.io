@@ -91,12 +91,12 @@ nav.top-links {
 
 .nav-links li>a:hover {
     cursor: pointer;
-    color: magenta;
+    color: blueviolet;
 }
 
 .active {
-    color: magenta !important;
-    border-bottom: 1px solid magenta;
+    color: blueviolet !important;
+    border-bottom: 1px solid blueviolet;
 }
 
 /* Menu button for the sub-menu */
@@ -117,7 +117,7 @@ button#close-menu-btn:focus {
 }
 
 button#close-menu-btn>i {
-    color: magenta;
+    color: blueviolet;
     font-size: 2rem;
     text-shadow: 1px 1px 1px #35013a;
 }
@@ -125,7 +125,7 @@ button#close-menu-btn>i {
 /* Center heading part  */
 
 .centered {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/unsplashA.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -168,7 +168,7 @@ h1 {
     0% {
         opacity: 0;
         letter-spacing: -10px;
-        color: #fc00ff;
+        color: blueviolet;
     }
     100% {
         opacity: 1;
@@ -185,7 +185,7 @@ div.blur {
     width: 100%;
     padding: 1rem 5rem 1rem 5rem;
     z-index: 20;
-    background: rgba(20, 1, 44, 0.3);
+    /* background: rgba(20, 1, 44, 0.3); */
     animation: blur-text 2s 1s forwards;
     transform: translateY(220px);
     /* backdrop-filter: blur(5px); */
@@ -209,7 +209,7 @@ p.intro {
 }
 
 span.sm-name {
-    color: magenta;
+    color: blueviolet;
     font-size: 20px;
     letter-spacing: 3px;
     text-shadow: 1px 1px 1px #35013a;
@@ -217,7 +217,7 @@ span.sm-name {
 
 .blur hr {
     width: 60%;
-    background-color: magenta;
+    background-color: blueviolet;
 }
 
 .nav-icons {
@@ -235,7 +235,7 @@ span.sm-name {
 }
 
 .fab {
-    color: magenta;
+    color: blueviolet;
 }
 
 .nav-icons span {
@@ -247,7 +247,7 @@ span.sm-name {
 }
 
 .nav-icons li>a:hover span {
-    color: magenta;
+    color: blueviolet;
 }
 
 .nav-icons li>a::before {
@@ -257,7 +257,7 @@ span.sm-name {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: magenta;
+    background-color: blueviolet;
     transform: scale(0);
     transform-origin: right center;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -278,7 +278,7 @@ span.sm-name {
 
 .centered span.material-icons:hover {
     cursor: pointer;
-    color: magenta;
+    color: blueviolet;
 }
 
 /* ABOUT Section  */
@@ -295,6 +295,7 @@ span.sm-name {
 
 .about-img img {
     width: 100%;
+    border: 1px solid blueviolet;
     /* opacity: 0.7; */
 }
 
@@ -313,7 +314,7 @@ span.sm-name {
     margin-top: 16px;
     color: #ffffff;
     /* text-shadow: 1px 1px 1px #35013a; */
-    border: 1px solid magenta;
+    border: 1px solid blueviolet;
     font-size: 12px;
 }
 
@@ -324,7 +325,7 @@ br.email-break-2 {
 
 .image-txt>div .material-icons {
     padding: 0rem 1rem;
-    color: magenta;
+    color: blueviolet;
 }
 
 .about-txt {
@@ -337,7 +338,7 @@ h2.h2-about {
     font-size: 2.5rem;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: magenta;
+    color: blueviolet;
     margin: 1rem 2rem;
 }
 
@@ -363,8 +364,7 @@ p.p-top-txt {
 }
 
 p.colored-name {
-    color: magenta;
-    /* text-shadow: 1px 1px 1px #35013a; */
+    color: blueviolet;
 }
 
 /* Download Button za .pdf Resume (in Modal) */
@@ -394,7 +394,7 @@ p.colored-name {
 }
 
 .btn-cv:hover {
-    color: magenta;
+    color: blueviolet;
 }
 
 .btn-cv>span {
@@ -409,7 +409,7 @@ p.colored-name {
     content: "";
     right: 0;
     bottom: 0;
-    background-color: magenta;
+    background-color: blueviolet;
     transition: all 0.3s ease;
 }
 
@@ -419,7 +419,7 @@ p.colored-name {
     content: "";
     left: 0;
     top: 0;
-    background-color: magenta;
+    background-color: blueviolet;
     transition: all 0.3s ease;
 }
 
@@ -498,7 +498,7 @@ p.colored-name {
 .res-text-2 h3,
 .res-text-3 h3 {
     display: block;
-    border-bottom: 1px solid magenta;
+    border-bottom: 1px solid blueviolet;
 }
 
 h5.skills {
@@ -534,11 +534,14 @@ h5.skills {
 
 #works {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
 }
 
 #works h2 {
     display: inline-block;
-    color: magenta;
+    color: blueviolet;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -555,7 +558,7 @@ h5.skills {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: magenta;
+    background-color: blueviolet;
     transform: scale(0);
     /* transform-origin: right center; */
     transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
@@ -577,12 +580,26 @@ span.letters {
     position: relative;
     padding-left: 0px;
     padding-right: 0px;
+    transform: scale(0.95);
+    border: 1px solid blueviolet;
 }
 
 a.a-card {
     cursor: pointer;
     display: block;
     width: 100%;
+}
+
+.project {
+    margin: 0;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .c-card img.img-card {
@@ -595,7 +612,11 @@ a.a-card {
 a.a-card:hover img.img-card {
     opacity: 0.35;
     transform: scale(0.95);
-    border: 1px solid magenta !important;
+    border: 1px solid blueviolet !important;
+}
+
+a.a-card:hover .project {
+    visibility: hidden;
 }
 
 a.a-card:hover span.material-icons,
@@ -607,7 +628,7 @@ a.a-card:hover .c-txt {
 a.a-card:focus img.img-card {
     opacity: 0.35;
     transform: scale(0.95);
-    border: 1px solid magenta !important;
+    border: 1px solid blueviolet !important;
 }
 
 a.a-card:focus span.material-icons,
@@ -620,7 +641,7 @@ a.a-card:focus .c-txt {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: magenta;
+    color: blueviolet;
     font-size: 3rem;
     opacity: 0;
 }
@@ -673,20 +694,20 @@ p.modal-txt {
 }
 
 .btn-modal {
-    color: magenta;
+    color: blueviolet;
     letter-spacing: 3px;
     border-radius: 0px;
     transition: linear 0.3s;
 }
 
 .btn-modal:hover {
-    color: magenta;
-    border-bottom: 1px solid magenta;
+    color: blueviolet;
+    border-bottom: 1px solid blueviolet;
 }
 
 .btn-modal:focus {
     box-shadow: none;
-    border-bottom: 1px solid magenta;
+    border-bottom: 1px solid blueviolet;
     transition: linear 0.3s;
 }
 
@@ -708,7 +729,7 @@ p.modal-txt {
 }
 
 h2.contact-heading {
-    color: magenta;
+    color: blueviolet;
     font-size: 2rem;
     letter-spacing: 3px;
     margin-bottom: 3rem;
@@ -726,7 +747,7 @@ label {
 
 input.form-control {
     background-color: transparent;
-    border-bottom: 1px solid magenta;
+    border-bottom: 1px solid blueviolet;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -735,33 +756,33 @@ input.form-control {
 
 input.form-control:focus,
 textarea.form-control:focus {
-    border-bottom: 1px solid magenta;
+    border-bottom: 1px solid blueviolet;
     background-color: transparent;
     box-shadow: none;
 }
 
 textarea.form-control {
     background-color: transparent;
-    border: 1px solid magenta;
+    border: 1px solid blueviolet;
 }
 
 textarea.form-control:focus {
-    border: 1px solid magenta;
+    border: 1px solid blueviolet;
 }
 
 button.submit-btn {
     background-color: transparent;
     width: 100%;
     letter-spacing: 5px;
-    border: 1px solid magenta;
+    border: 1px solid blueviolet;
     margin-top: 2rem;
     margin-bottom: 2rem;
     transition: 0.5s;
-    color: magenta;
+    color: blueviolet;
 }
 
 button.submit-btn:hover {
-    background-color: magenta;
+    background-color: blueviolet;
     letter-spacing: 10px;
     color: white;
 }
@@ -776,7 +797,7 @@ button.submit-btn:hover {
 
 .person span {
     font-size: 5rem;
-    color: magenta;
+    color: blueviolet;
 }   
 
 .small-img {
@@ -790,7 +811,7 @@ button.submit-btn:hover {
 #footer {
     position: relative;
     background-color: #000000;
-    border-top: 1px solid magenta;
+    border-top: 1px solid blueviolet;
 }
 
 footer {
@@ -809,7 +830,7 @@ span.scroll-top {
     top: -24px;
     left: 50%;
     transform: translateX(-50%);
-    color: magenta;
+    color: blueviolet;
     font-size: 3rem;
     padding: 0.5rem;
     border-radius: 50%;
@@ -819,7 +840,7 @@ span.scroll-top {
 }
 
 span.scroll-top:hover {
-    background-color: magenta;
+    background-color: blueviolet;
     color: black;
 }
 
