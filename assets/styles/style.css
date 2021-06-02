@@ -185,7 +185,6 @@ div.blur {
     width: 100%;
     padding: 1rem 5rem 1rem 5rem;
     z-index: 20;
-    /* background: rgba(20, 1, 44, 0.3); */
     animation: blur-text 2s 1s forwards;
     transform: translateY(220px);
     /* backdrop-filter: blur(5px); */
@@ -284,7 +283,7 @@ span.sm-name {
 /* ABOUT Section  */
 
 #about {
-    background-image: linear-gradient(rgba(15, 10, 20, 0.99), rgba(15, 10, 20, 0.99));
+    background-image: linear-gradient(rgba(15, 10, 30, 0.99), rgba(15, 10, 30, 0.99));
 }
 
 .about-img {
@@ -313,7 +312,6 @@ span.sm-name {
     height: 60px;
     margin-top: 16px;
     color: #ffffff;
-    /* text-shadow: 1px 1px 1px #35013a; */
     border: 1px solid plum;
     font-size: 12px;
 }
@@ -331,7 +329,6 @@ br.email-break-2 {
 .about-txt {
     margin-top: 5%;
     margin-bottom: 5%;
-    /* border-left: 1px solid magenta; */
 }
 
 h2.h2-about {
@@ -395,6 +392,10 @@ p.colored-name {
 
 .btn-cv:hover {
     color: plum;
+}
+
+.btn-cv:focus {
+    outline: none;
 }
 
 .btn-cv>span {
@@ -469,7 +470,7 @@ p.colored-name {
 /* SECTION RESUME */
 
 #resume {
-    background-image: linear-gradient(rgba(15, 10, 20, 0.99), rgba(15, 10, 20, 0.99));
+    background-image: linear-gradient(rgba(15, 10, 30, 0.99), rgba(15, 10, 30, 0.99));
 }
 
 .new-resume img {
@@ -528,12 +529,13 @@ h5.skills {
     color: white;
     font-size: 2.5rem;
     letter-spacing: 5px;
+    border-bottom: 1px solid plum;
 }
 
 /* SECTION WORKS  */
 
 #works {
-    background-image: linear-gradient(rgba(15, 10, 20, 0.99), rgba(15, 10, 20, 0.99));
+    background-image: linear-gradient(rgba(15, 10, 30, 0.99), rgba(15, 10, 30, 0.99));
 }
 
 #works h2 {
@@ -672,12 +674,12 @@ div.modal-dialog-works {
 }
 
 h5.modal-hdr {
-    color: black;
+    color: rgb(25, 15, 50);
     padding: 0.5rem 1rem;
 }
 
 p.modal-txt {
-    color: black;
+    color: rgb(25, 15, 50);
     padding-left: 1rem;
 }
 
@@ -687,7 +689,7 @@ p.modal-txt {
 }
 
 .modal-footer {
-    background-image: linear-gradient(rgba(15, 10, 20, 0.99), rgba(15, 10, 20, 0.99));
+    background-image: linear-gradient(rgba(15, 10, 30, 0.99), rgba(15, 10, 30, 0.99));
     border-top: 0px;
 }
 
@@ -715,7 +717,7 @@ p.modal-txt {
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 5%;
-    background-image: linear-gradient(rgba(15, 10, 20, 0.99), rgba(15, 10, 20, 0.99));
+    background-image: linear-gradient(rgba(15, 10, 30, 0.99), rgba(15, 10, 30, 0.99));
     background-size: cover;
     background-position: center;
     color: white;
@@ -817,7 +819,7 @@ footer {
 }
 
 .copy-rights p {
-    color: white;
+    color: plum;
     margin: 0;
     padding: 1rem 0;
     white-space: normal;
@@ -832,14 +834,14 @@ span.scroll-top {
     font-size: 3rem;
     padding: 0.5rem;
     border-radius: 50%;
-    background-color: rgba(46, 45, 45, 1);
+    background-color: rgb(25, 15, 50);
     cursor: pointer;
     transition: 0.3s;
 }
 
 span.scroll-top:hover {
     background-color: plum;
-    color: black;
+    color: rgb(25, 15, 50);
 }
 
 /* RESPONSIVENESS For Large screens, Tablet and Mobile devices */
@@ -880,7 +882,6 @@ span.scroll-top:hover {
     }
 
     .image-txt div {
-        /* box-shadow: inset 0px -8px 44px -3px rgba(77, 1, 73, 0.7); */
         font-size: 12px;
     }
 
@@ -1214,7 +1215,7 @@ span.scroll-top:hover {
 }
 
 
-@media only screen and (max-width: 305px) {
+@media only screen and (max-width: 330px) {
     body {
         font-size: 14px;
     }
@@ -1275,7 +1276,8 @@ span.scroll-top:hover {
     /* Resume section  */
 
     .res-info h3 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        border-bottom: 1px solid plum;
     }
 
 }
