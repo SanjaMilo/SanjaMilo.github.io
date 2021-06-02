@@ -48,7 +48,7 @@ a:hover {
 /* Navbar menu  */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/unsplashA.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/unsplashA.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -91,12 +91,12 @@ nav.top-links {
 
 .nav-links li>a:hover {
     cursor: pointer;
-    color: blueviolet;
+    color: plum;
 }
 
 .active {
-    color: blueviolet !important;
-    border-bottom: 1px solid blueviolet;
+    color: plum !important;
+    border-bottom: 1px solid plum;
 }
 
 /* Menu button for the sub-menu */
@@ -117,7 +117,7 @@ button#close-menu-btn:focus {
 }
 
 button#close-menu-btn>i {
-    color: blueviolet;
+    color: plum;
     font-size: 2rem;
     text-shadow: 1px 1px 1px #35013a;
 }
@@ -125,7 +125,7 @@ button#close-menu-btn>i {
 /* Center heading part  */
 
 .centered {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/unsplashA.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -168,7 +168,7 @@ h1 {
     0% {
         opacity: 0;
         letter-spacing: -10px;
-        color: blueviolet;
+        color: plum;
     }
     100% {
         opacity: 1;
@@ -209,7 +209,7 @@ p.intro {
 }
 
 span.sm-name {
-    color: blueviolet;
+    color: plum;
     font-size: 20px;
     letter-spacing: 3px;
     text-shadow: 1px 1px 1px #35013a;
@@ -217,7 +217,7 @@ span.sm-name {
 
 .blur hr {
     width: 60%;
-    background-color: blueviolet;
+    background-color: plum;
 }
 
 .nav-icons {
@@ -235,11 +235,11 @@ span.sm-name {
 }
 
 .fab {
-    color: blueviolet;
+    color: plum;
 }
 
 .nav-icons span {
-    color: #ffffff;
+    color: white;
 }
 
 .nav-icons li>a:hover i.fab{
@@ -247,7 +247,7 @@ span.sm-name {
 }
 
 .nav-icons li>a:hover span {
-    color: blueviolet;
+    color: plum;
 }
 
 .nav-icons li>a::before {
@@ -257,7 +257,7 @@ span.sm-name {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: blueviolet;
+    background-color: plum;
     transform: scale(0);
     transform-origin: right center;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -278,13 +278,13 @@ span.sm-name {
 
 .centered span.material-icons:hover {
     cursor: pointer;
-    color: blueviolet;
+    color: plum;
 }
 
 /* ABOUT Section  */
 
 #about {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    background-image: linear-gradient(rgba(15, 10, 20, 0.99), rgba(15, 10, 20, 0.99));
 }
 
 .about-img {
@@ -295,7 +295,7 @@ span.sm-name {
 
 .about-img img {
     width: 100%;
-    border: 1px solid blueviolet;
+    border: 1px solid plum;
     /* opacity: 0.7; */
 }
 
@@ -314,7 +314,7 @@ span.sm-name {
     margin-top: 16px;
     color: #ffffff;
     /* text-shadow: 1px 1px 1px #35013a; */
-    border: 1px solid blueviolet;
+    border: 1px solid plum;
     font-size: 12px;
 }
 
@@ -325,7 +325,7 @@ br.email-break-2 {
 
 .image-txt>div .material-icons {
     padding: 0rem 1rem;
-    color: blueviolet;
+    color: plum;
 }
 
 .about-txt {
@@ -338,7 +338,7 @@ h2.h2-about {
     font-size: 2.5rem;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: blueviolet;
+    color: plum;
     margin: 1rem 2rem;
 }
 
@@ -364,7 +364,7 @@ p.p-top-txt {
 }
 
 p.colored-name {
-    color: blueviolet;
+    color: plum;
 }
 
 /* Download Button za .pdf Resume (in Modal) */
@@ -394,7 +394,7 @@ p.colored-name {
 }
 
 .btn-cv:hover {
-    color: blueviolet;
+    color: plum;
 }
 
 .btn-cv>span {
@@ -409,7 +409,7 @@ p.colored-name {
     content: "";
     right: 0;
     bottom: 0;
-    background-color: blueviolet;
+    background-color: plum;
     transition: all 0.3s ease;
 }
 
@@ -419,7 +419,7 @@ p.colored-name {
     content: "";
     left: 0;
     top: 0;
-    background-color: blueviolet;
+    background-color: plum;
     transition: all 0.3s ease;
 }
 
@@ -456,7 +456,7 @@ p.colored-name {
 /* Modal  */
 
 .modal-resume-content {
-    background-color: rgb(126, 90, 160);
+    background-color: rgb(189, 166, 211);
 }
 
 .modal-resume-title {
@@ -469,7 +469,7 @@ p.colored-name {
 /* SECTION RESUME */
 
 #resume {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    background-image: linear-gradient(rgba(15, 10, 20, 0.99), rgba(15, 10, 20, 0.99));
 }
 
 .new-resume img {
@@ -498,7 +498,7 @@ p.colored-name {
 .res-text-2 h3,
 .res-text-3 h3 {
     display: block;
-    border-bottom: 1px solid blueviolet;
+    border-bottom: 1px solid plum;
 }
 
 h5.skills {
@@ -533,15 +533,12 @@ h5.skills {
 /* SECTION WORKS  */
 
 #works {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
+    background-image: linear-gradient(rgba(15, 10, 20, 0.99), rgba(15, 10, 20, 0.99));
 }
 
 #works h2 {
     display: inline-block;
-    color: blueviolet;
+    color: plum;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -558,7 +555,7 @@ h5.skills {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: blueviolet;
+    background-color: plum;
     transform: scale(0);
     /* transform-origin: right center; */
     transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
@@ -569,7 +566,7 @@ h5.skills {
 }
 
 #works h2:hover {
-    color: #ffffff;
+    color: white;
 }
 
 span.letters {
@@ -581,7 +578,7 @@ span.letters {
     padding-left: 0px;
     padding-right: 0px;
     transform: scale(0.95);
-    border: 1px solid blueviolet;
+    border: 1px solid plum;
 }
 
 a.a-card {
@@ -591,6 +588,7 @@ a.a-card {
 }
 
 .project {
+    text-align: center;
     margin: 0;
     color: white;
     letter-spacing: 5px;
@@ -612,10 +610,10 @@ a.a-card {
 a.a-card:hover img.img-card {
     opacity: 0.35;
     transform: scale(0.95);
-    border: 1px solid blueviolet !important;
+    border: 1px solid plum !important;
 }
 
-a.a-card:hover .project {
+a.a-card:hover .project, a.a-card:focus .project {
     visibility: hidden;
 }
 
@@ -628,7 +626,7 @@ a.a-card:hover .c-txt {
 a.a-card:focus img.img-card {
     opacity: 0.35;
     transform: scale(0.95);
-    border: 1px solid blueviolet !important;
+    border: 1px solid plum !important;
 }
 
 a.a-card:focus span.material-icons,
@@ -641,7 +639,7 @@ a.a-card:focus .c-txt {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: blueviolet;
+    color: plum;
     font-size: 3rem;
     opacity: 0;
 }
@@ -689,25 +687,25 @@ p.modal-txt {
 }
 
 .modal-footer {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    background-image: linear-gradient(rgba(15, 10, 20, 0.99), rgba(15, 10, 20, 0.99));
     border-top: 0px;
 }
 
 .btn-modal {
-    color: blueviolet;
+    color: plum;
     letter-spacing: 3px;
     border-radius: 0px;
     transition: linear 0.3s;
 }
 
 .btn-modal:hover {
-    color: blueviolet;
-    border-bottom: 1px solid blueviolet;
+    color: plum;
+    border-bottom: 1px solid plum;
 }
 
 .btn-modal:focus {
     box-shadow: none;
-    border-bottom: 1px solid blueviolet;
+    border-bottom: 1px solid plum;
     transition: linear 0.3s;
 }
 
@@ -717,10 +715,10 @@ p.modal-txt {
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 5%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    background-image: linear-gradient(rgba(15, 10, 20, 0.99), rgba(15, 10, 20, 0.99));
     background-size: cover;
     background-position: center;
-    color: #ffffff;
+    color: white;
 }
 
 .contact-intro {
@@ -729,7 +727,7 @@ p.modal-txt {
 }
 
 h2.contact-heading {
-    color: blueviolet;
+    color: plum;
     font-size: 2rem;
     letter-spacing: 3px;
     margin-bottom: 3rem;
@@ -747,7 +745,7 @@ label {
 
 input.form-control {
     background-color: transparent;
-    border-bottom: 1px solid blueviolet;
+    border-bottom: 1px solid plum;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -756,33 +754,33 @@ input.form-control {
 
 input.form-control:focus,
 textarea.form-control:focus {
-    border-bottom: 1px solid blueviolet;
+    border-bottom: 1px solid plum;
     background-color: transparent;
     box-shadow: none;
 }
 
 textarea.form-control {
     background-color: transparent;
-    border: 1px solid blueviolet;
+    border: 1px solid plum;
 }
 
 textarea.form-control:focus {
-    border: 1px solid blueviolet;
+    border: 1px solid plum;
 }
 
 button.submit-btn {
     background-color: transparent;
     width: 100%;
     letter-spacing: 5px;
-    border: 1px solid blueviolet;
+    border: 1px solid plum;
     margin-top: 2rem;
     margin-bottom: 2rem;
     transition: 0.5s;
-    color: blueviolet;
+    color: plum;
 }
 
 button.submit-btn:hover {
-    background-color: blueviolet;
+    background-color: plum;
     letter-spacing: 10px;
     color: white;
 }
@@ -797,7 +795,7 @@ button.submit-btn:hover {
 
 .person span {
     font-size: 5rem;
-    color: blueviolet;
+    color: plum;
 }   
 
 .small-img {
@@ -811,11 +809,11 @@ button.submit-btn:hover {
 #footer {
     position: relative;
     background-color: #000000;
-    border-top: 1px solid blueviolet;
+    border-top: 1px solid plum;
 }
 
 footer {
-    padding: 10%;
+    padding: 5%;
 }
 
 .copy-rights p {
@@ -830,7 +828,7 @@ span.scroll-top {
     top: -24px;
     left: 50%;
     transform: translateX(-50%);
-    color: blueviolet;
+    color: plum;
     font-size: 3rem;
     padding: 0.5rem;
     border-radius: 50%;
@@ -840,7 +838,7 @@ span.scroll-top {
 }
 
 span.scroll-top:hover {
-    background-color: blueviolet;
+    background-color: plum;
     color: black;
 }
 
