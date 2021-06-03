@@ -784,7 +784,7 @@ button.submit-btn {
 button.submit-btn:hover {
     background-color: plum;
     letter-spacing: 10px;
-    color: white;
+    color: rgb(25, 15, 50);
 }
 
 .contact-h4 {
