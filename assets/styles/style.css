@@ -637,6 +637,7 @@ a.a-card {
 
 .project {
     background-color: white;
+    padding: 1rem;
     text-align: center;
     margin: 0;
     color: black;
@@ -1056,9 +1057,10 @@ span.scroll-top:hover {
         display: none;
         background-color:rgba(149, 150, 205, 0.849);
         position: absolute;
-        top: 3.5rem;
-        right: 1.5rem;
+        top: 0;
+        left: 0;
         padding: 1rem 2rem;
+        transition: 0.2 ease-in-out;
     }
 
     .top-scroll-links > li {
@@ -1066,9 +1068,9 @@ span.scroll-top:hover {
         margin: 1rem 0rem;
     }
 
-    .centered {
+    /* .centered {
         min-height: 739px;
-    }
+    } */
 
     h1 {
         top: 35%;
@@ -1081,7 +1083,7 @@ span.scroll-top:hover {
     /* About section  */
 
     h2.h2-about {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .resume button {

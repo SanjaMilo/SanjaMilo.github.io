@@ -1,18 +1,4 @@
 $(window).on('load', function() {
-	
-	// Show and hide Navbar on window scroll
-	let prevScrollPos = window.pageYOffset;
-	let topNav = document.getElementById('top-nav');
-
-	window.onscroll = function() {
-		let currentScrollPos = window.pageYOffset;
-		if (prevScrollPos > currentScrollPos) {
-			topNav.style.top = '0';
-		} else {
-			topNav.style.top = '-80px';
-		}
-		prevScrollPos = currentScrollPos;
-	};
 
 	// Footer button to scroll to the top of the page
 	let scrollBtn = $('.scroll-top');
@@ -24,7 +10,7 @@ $(window).on('load', function() {
 			},
 			3000
 		);
-	}
+	};
 
 	scrollBtn.click(scrollToTop);
 
@@ -43,7 +29,7 @@ $(window).on('load', function() {
 		} else {
 			menuLinks.css('display', 'block');
 		}
-	}
+	};
 
 	closeBtn.on('click', closeOpenMenu);
 	// Close the menu links on outside click (document):
@@ -53,6 +39,25 @@ $(window).on('load', function() {
 			isClicked = !isClicked;
 		}
 	});
+
+	// Show and hide Navbar on window scroll
+	let prevScrollPos = window.pageYOffset;
+	let topNav = document.getElementById('top-nav');
+
+	window.onscroll = function() {
+		let currentScrollPos = window.pageYOffset;
+		if (prevScrollPos > currentScrollPos) {
+			topNav.style.top = '0';
+		} else {
+			topNav.style.top = '-80px';
+		}
+		prevScrollPos = currentScrollPos;
+
+		if (window.innerWidth < 769) {
+			isClicked = false;
+			menuLinks.css('display', 'none');	
+		}
+	};
 
 	//scrollSpy function
 
@@ -68,7 +73,7 @@ $(window).on('load', function() {
 
 		$(".top-scroll-links a[href='#" + current + "']").addClass('active');
 		$('.top-scroll-links a').not("a[href='#" + current + "']").removeClass('active');
-	}
+	};
 
 	// smooth scrolling navigation
 
@@ -119,7 +124,8 @@ $(window).on('load', function() {
 			easing: 'easeInOutExpo', // easing style
 			delay: anime.stagger(100) // 0.1 second delay of every character
 		});
-	}
+	};
+
 	// Event listeners on the three different titles
 	$('#title1').mouseout(function() {
 		animationText('#title1');
