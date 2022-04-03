@@ -1,4 +1,18 @@
 $(window).on('load', function() {
+	
+	// Show and hide Navbar on window scroll
+	let prevScrollPos = window.pageYOffset;
+	let topNav = document.getElementById('top-nav');
+
+	window.onscroll = function() {
+		let currentScrollPos = window.pageYOffset;
+		if (prevScrollPos > currentScrollPos) {
+			topNav.style.top = '0';
+		} else {
+			topNav.style.top = '-80px';
+		}
+		prevScrollPos = currentScrollPos;
+	};
 
 	// Footer button to scroll to the top of the page
 	let scrollBtn = $('.scroll-top');
@@ -6,11 +20,11 @@ $(window).on('load', function() {
 	function scrollToTop() {
 		$('html, body').animate(
 			{
-				scrollTop: $('html, body').offset().top
+				scrollTop: $('html, body').offset().top 
 			},
 			3000
 		);
-	};
+	}
 
 	scrollBtn.click(scrollToTop);
 
@@ -28,16 +42,16 @@ $(window).on('load', function() {
 			menuLinks.css('display', 'none');
 		} else {
 			menuLinks.css('display', 'block');
-		};
-	};
-	
+		}
+	}
+
 	closeBtn.on('click', closeOpenMenu);
 	// Close the menu links on outside click (document):
 	$(document).on('click', function() {
 		if (isClicked === true) {
 			menuLinks.css('display', 'none');
 			isClicked = !isClicked;
-		};
+		}
 	});
 
 	//scrollSpy function
@@ -49,12 +63,12 @@ $(window).on('load', function() {
 		for (let i = 0; i < sections.length; i++) {
 			if ($('#' + sections[i]).offset().top <= $(window).scrollTop() + 79) {
 				current = sections[i];
-			};
-		};
+			}
+		}
 
 		$(".top-scroll-links a[href='#" + current + "']").addClass('active');
 		$('.top-scroll-links a').not("a[href='#" + current + "']").removeClass('active');
-	};
+	}
 
 	// smooth scrolling navigation
 
@@ -64,7 +78,8 @@ $(window).on('load', function() {
 		if ($(window).width() > 768) {
 			$('body, html').animate(
 				{
-					scrollTop: $(target).offset().top - 74
+					// scrollTop: $(target).offset().top - 74
+					scrollTop: $(target).offset().top + 5
 				},
 				1000
 			);
@@ -75,7 +90,7 @@ $(window).on('load', function() {
 				},
 				1000
 			);
-		};
+		}
 		return false;
 	});
 
@@ -84,7 +99,6 @@ $(window).on('load', function() {
 	$(window).scroll(function() {
 		scrollSpy();
 	});
-	
 
 	// Animation on the title letters in the Resume section (listen on mouse leave)
 	function animationText(target) {
@@ -105,16 +119,15 @@ $(window).on('load', function() {
 			easing: 'easeInOutExpo', // easing style
 			delay: anime.stagger(100) // 0.1 second delay of every character
 		});
-	};
-	// Event listeners on the three different titles 
-	$('#title1').mouseout(function(){
+	}
+	// Event listeners on the three different titles
+	$('#title1').mouseout(function() {
 		animationText('#title1');
 	});
-	$('#title2').mouseout(function(){
+	$('#title2').mouseout(function() {
 		animationText('#title2');
 	});
-	$('#title3').mouseout(function(){
+	$('#title3').mouseout(function() {
 		animationText('#title3');
 	});
 });
-
