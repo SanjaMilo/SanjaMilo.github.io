@@ -134,6 +134,7 @@ button#close-menu-btn>i {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    min-height: 425px;
     position: relative;
     animation: bg-hero 1s forwards ease;
     opacity: 0;
