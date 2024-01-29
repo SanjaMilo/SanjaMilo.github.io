@@ -115,7 +115,7 @@ $(window).on('load', function() {
 				$(target).append(`<span class="letters">${el}</span>`);
 			});
 		});
-		// ANIMATION (loop false means not to repeat animation, just one time animation (true, means infinite loop)
+		// ANIMATION (loop false means not to repeat animation, just one time animation (true, means infinite loop) .
 		anime.timeline({ loop: false }).add({
 			targets: `${target} .letters`, // css selector
 			scale: [ 3, 1 ], // 3 to 1
