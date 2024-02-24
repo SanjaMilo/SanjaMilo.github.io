@@ -109,7 +109,7 @@ $(window).on('load', function() {
 	function animationText(target) {
 		$(target).each(function(index) {
 			var characters = $(target).text().split('');
-			console.log(characters); // test
+			//console.log(characters); // test
 			$(target).empty();
 			$.each(characters, function(i, el) {
 				$(target).append(`<span class="letters">${el}</span>`);
